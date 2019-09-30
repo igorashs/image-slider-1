@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+.html {
+  font-size: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+}
+
+.image-slider {
+  height: 50rem;
+  margin-top: 2rem;
+}
+
+.slider-wrapper {
+  background-color: black;
+  height: 50rem;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: rgba(117, 117, 117, 0.3);
+  position: relative;
+}
+
+.button.arrow-left::before,
+.button.arrow-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-right: 50px solid rgba(117, 117, 117, 0.3);
+}
+
+.button.arrow-right::before {
+  left: initial;
+  right: -100%;
+  border-right: 0;
+  border-left: 50px solid rgba(117, 117, 117, 0.3);
+}
