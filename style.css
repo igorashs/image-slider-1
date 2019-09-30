@@ -29,6 +29,7 @@ body {
 .slider-wrapper {
   background-color: rgb(0, 0, 0);
   position: relative;
+  overflow: hidden;
   box-shadow: 0 0 10px 5px rgb(0, 0, 0);
 }
 
@@ -119,16 +120,12 @@ body {
 }
 
 .slider-images {
-  display: grid;
+  display: flex;
   width: 100%;
-  grid-template-columns: 1fr repeat(4, 0);
-  align-items: center;
-  overflow: hidden;
-  position: relative;
+  transition: all 512ms;
 }
 
 .img {
   max-width: 100%;
   width: 100%;
-  object-fit: cover;
 }
