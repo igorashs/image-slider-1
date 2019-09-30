@@ -25,6 +25,7 @@
 .slider-wrapper {
   background-color: black;
   height: 50rem;
+  position: relative;
 }
 
 .button {
@@ -33,6 +34,10 @@
   border: 0;
   background: rgba(117, 117, 117, 0.3);
   position: relative;
+  cursor: pointer;
+  outline: none;
+  -moz-outline-radius: none;
+  transition: background-color 512ms;
 }
 
 .button.arrow-left::before,
@@ -44,6 +49,7 @@
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
   border-right: 50px solid rgba(117, 117, 117, 0.3);
+  transition: border-right-color 512ms;
 }
 
 .button.arrow-right::before {
@@ -51,4 +57,58 @@
   right: -100%;
   border-right: 0;
   border-left: 50px solid rgba(117, 117, 117, 0.3);
+  transition: initial;
+  transition: border-left-color 512ms;
+}
+
+.button.dot {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.slider-controller {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.button.arrow-left {
+  justify-self: end;
+}
+
+.button.arrow-right {
+  justify-self: start;
+}
+
+.images-navigation {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.button:hover {
+  background: rgba(117, 117, 117, 0.45);
+}
+
+.button.arrow-left:hover::before {
+  border-right: 50px solid rgba(117, 117, 117, 0.45);
+}
+
+.button.arrow-right:hover::before {
+  border-left: 50px solid rgba(117, 117, 117, 0.45);
+}
+
+.button.dot.active {
+  transform: scale(1.4);
+  background: rgba(117, 117, 117, 0.603);
+}
+
+.button.dot:hover {
+  transform: scale(1.2);
 }
