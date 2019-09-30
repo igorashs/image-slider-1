@@ -1,2 +1,5 @@
-# image-slider-1
-Vanilla Image Slider 1
+# Image Slider 1
+
+> **SOON** [demo]() :shipit:
+
+## Vanilla(HTML, CSS, JS) Image Slider
