@@ -24,7 +24,6 @@
 
 .slider-wrapper {
   background-color: black;
-  height: 50rem;
   position: relative;
 }
 
@@ -111,4 +110,19 @@
 
 .button.dot:hover {
   transform: scale(1.2);
+}
+
+.slider-images {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr repeat(4, 0);
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
