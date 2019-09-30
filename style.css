@@ -7,13 +7,17 @@
   font-size: inherit;
 }
 
-.html {
+html {
   font-size: 10px;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.66);
 }
 
 .container {
   width: 100%;
-  max-width: 98rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -23,8 +27,9 @@
 }
 
 .slider-wrapper {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   position: relative;
+  box-shadow: 0 0 10px 5px rgb(0, 0, 0);
 }
 
 .button {
